@@ -27,7 +27,7 @@ const perguntas = [
             },
             {
                 texto: "Não, nunca presenciei algo assim.",
-                afirmacao: "afirmação"
+                afirmacao: "muitas pessoas hoje em dia mudaram sua forma de pensar, incluindo todos sem nenhum tipo de preconceitos."
             }
         ]
     },
@@ -36,11 +36,11 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Sim, são ofensivas.",
-                afirmacao: "afirmação"
+                afirmacao: "piadinhas não podem ser aceita, pois todos somos iguais."
             },
             {
                 texto: "Não vejo problema nelas.",
-                afirmacao: "afirmação"
+                afirmacao: "por se acharem melhor, fazem piadinhas ridicularizando o proximo, isso é totalmente errado."
             }
         ]
     },
@@ -49,11 +49,11 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Sim, acredito.",
-                afirmacao: "afirmação"
+                afirmacao: "com pensamento errado, julgam as pessoas com deficiência como uma carga."
             },
             {
                 texto: "Não, não acredito.",
-                afirmacao: "afirmação"
+                afirmacao: "pessoas com deficiência não são de forma alguma uma carga para a sociedade."
             }
         ]
     },
@@ -62,11 +62,11 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Sim, todos merecem as mesmas chances.",
-                afirmacao: "afirmação"
+                afirmacao: "independente de suas capacidades físicas, devem ter várias oportunidades, pois os direitos são iguais para todos."
             },
             {
                 texto: "Não acho que isso seja possível.",
-                afirmacao: "afirmação"
+                afirmacao: "de forma errônea diminuem a capacidade das pessoas com deficiência, dizem não ser possivel incluir e dar oportunidades."
             }
         ]
     },
