@@ -1,4 +1,4 @@
-import {aleatorio} from './aleatorio.js';
+import {aleatorio, nome} from './aleatorio.js';
 import {perguntas} from './pergunta.js';
 
 const caixaPrincipal = document.querySelector(".caixa-principal");
@@ -42,7 +42,7 @@ function respostaSelecionada(opcaoSelecionada) {
 }
 
 function mostraResultado() {
-    caixaPerguntas.textContent = "Em 2049...";
+    caixaPerguntas.textContent = `em 2019, ${}`;
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
     caixaResultado.classList.add("mostrar")
