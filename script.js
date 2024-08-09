@@ -1,5 +1,5 @@
 import {aleatorio} from './aleatorio.js';
-import {perguntas} from './perguntas.js';
+import {perguntas} from './pergunta.js';
 
 const caixaPrincipal = document.querySelector(".caixa-principal");
 const caixaPerguntas = document.querySelector(".caixa-perguntas");
@@ -45,12 +45,14 @@ function mostraResultado() {
     caixaPerguntas.textContent = "Em 2049...";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
-    botaoJogarNovamente.addEventListener("click", jogaNovamente());
+    caixaResultado.classList.add("mostrar")
+    botaoJogarNovamente.addEventListener("click", jogaNovamente);
 }
 
 function jogaNovamente(){
     atual = 0;
     historiaFinal = "";
+    caixaResultado.classList.remove("mostrar")
     mostraPergunta();
 }
 
