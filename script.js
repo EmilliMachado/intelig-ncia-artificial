@@ -1,6 +1,3 @@
-import { aleatorio, nome } from './aleatorio.js';
-import { perguntas } from './perguntas.js';
-
 const caixaPrincipal = document.querySelector(".caixa-principal");
 const caixaPerguntas = document.querySelector(".caixa-perguntas");
 const caixaAlternativas = document.querySelector(".caixa-alternativas");
@@ -35,9 +32,15 @@ function mostraAlternativas() {
 function respostaSelecionada(opcaoSelecionada) {
     const afirmacoes = aleatorio(opcaoSelecionada.afirmacao);
     historiaFinal += afirmacoes + " ";
-    atual++;
+    if(opcaoSelecionada.proxima !== undefined){
+        atual = opcaoSelecionada.proxima;
+    }else{
+        mostraResultado();
+        return;
+    }
     mostraPergunta();
 }
+
 
 function mostraResultado() {
     caixaPerguntas.textContent = `Em 2049, ${nome}`;
